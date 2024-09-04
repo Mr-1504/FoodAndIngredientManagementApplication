@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "D:\\Code\\C#\\FoodAndIngredientManagementApplication\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{771B1468-006A-472E-BE86-4F371C110CE8}|FoodAndIngredientManagementApplication.csproj|d:\\code\\c#\\foodandingredientmanagementapplication\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{771B1468-006A-472E-BE86-4F371C110CE8}|FoodAndIngredientManagementApplication.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{771B1468-006A-472E-BE86-4F371C110CE8}|FoodAndIngredientManagementApplication.csproj|d:\\code\\c#\\foodandingredientmanagementapplication\\src\\view\\login\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{771B1468-006A-472E-BE86-4F371C110CE8}|FoodAndIngredientManagementApplication.csproj|solutionrelative:src\\view\\login\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{771B1468-006A-472E-BE86-4F371C110CE8}|FoodAndIngredientManagementApplication.csproj|d:\\code\\c#\\foodandingredientmanagementapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{771B1468-006A-472E-BE86-4F371C110CE8}|FoodAndIngredientManagementApplication.csproj|d:\\code\\c#\\foodandingredientmanagementapplication\\src\\view\\login\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{771B1468-006A-472E-BE86-4F371C110CE8}|FoodAndIngredientManagementApplication.csproj|solutionrelative:src\\view\\login\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{771B1468-006A-472E-BE86-4F371C110CE8}|FoodAndIngredientManagementApplication.csproj|d:\\code\\c#\\foodandingredientmanagementapplication\\src\\model\\dataaccess\\sqlhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{771B1468-006A-472E-BE86-4F371C110CE8}|FoodAndIngredientManagementApplication.csproj|solutionrelative:src\\model\\dataaccess\\sqlhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{771B1468-006A-472E-BE86-4F371C110CE8}|FoodAndIngredientManagementApplication.csproj|D:\\Code\\C#\\FoodAndIngredientManagementApplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{771B1468-006A-472E-BE86-4F371C110CE8}|FoodAndIngredientManagementApplication.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{771B1468-006A-472E-BE86-4F371C110CE8}|FoodAndIngredientManagementApplication.csproj|d:\\code\\c#\\foodandingredientmanagementapplication\\src\\view\\login\\frmlogin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{771B1468-006A-472E-BE86-4F371C110CE8}|FoodAndIngredientManagementApplication.csproj|solutionrelative:src\\view\\login\\frmlogin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Code\\C#\\FoodAndIngredientManagementApplication\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Code\\C#\\FoodAndIngredientManagementApplication\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "SqlHelper.cs",
+              "DocumentMoniker": "D:\\Code\\C#\\FoodAndIngredientManagementApplication\\src\\Model\\DataAccess\\SqlHelper.cs",
+              "RelativeDocumentMoniker": "src\\Model\\DataAccess\\SqlHelper.cs",
+              "ToolTip": "D:\\Code\\C#\\FoodAndIngredientManagementApplication\\src\\Model\\DataAccess\\SqlHelper.cs",
+              "RelativeToolTip": "src\\Model\\DataAccess\\SqlHelper.cs",
+              "ViewState": "AgIAAKgAAAAAAAAAAAAgwLgAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T06:44:21.683Z",
+              "WhenOpened": "2024-09-04T07:17:52.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmLogin.cs",
+              "DocumentMoniker": "D:\\Code\\C#\\FoodAndIngredientManagementApplication\\src\\View\\Login\\frmLogin.cs",
+              "RelativeDocumentMoniker": "src\\View\\Login\\frmLogin.cs",
+              "ToolTip": "D:\\Code\\C#\\FoodAndIngredientManagementApplication\\src\\View\\Login\\frmLogin.cs",
+              "RelativeToolTip": "src\\View\\Login\\frmLogin.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAYwFMAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T07:14:04.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frmLogin.Designer.cs",
+              "DocumentMoniker": "D:\\Code\\C#\\FoodAndIngredientManagementApplication\\src\\View\\Login\\frmLogin.Designer.cs",
+              "RelativeDocumentMoniker": "src\\View\\Login\\frmLogin.Designer.cs",
+              "ToolTip": "D:\\Code\\C#\\FoodAndIngredientManagementApplication\\src\\View\\Login\\frmLogin.Designer.cs",
+              "RelativeToolTip": "src\\View\\Login\\frmLogin.Designer.cs",
+              "ViewState": "AgIAAL4AAAAAAAAAAAAYwMgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T07:06:21.464Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "D:\\Code\\C#\\FoodAndIngredientManagementApplication\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "D:\\Code\\C#\\FoodAndIngredientManagementApplication\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
+              "Title": "frmLogin.cs [Design]",
+              "DocumentMoniker": "D:\\Code\\C#\\FoodAndIngredientManagementApplication\\src\\View\\Login\\frmLogin.cs",
+              "RelativeDocumentMoniker": "src\\View\\Login\\frmLogin.cs",
+              "ToolTip": "D:\\Code\\C#\\FoodAndIngredientManagementApplication\\src\\View\\Login\\frmLogin.cs [Design]",
+              "RelativeToolTip": "src\\View\\Login\\frmLogin.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T06:44:18.295Z",
+              "WhenOpened": "2024-09-04T07:04:22.242Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Code\\C#\\FoodAndIngredientManagementApplication\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Code\\C#\\FoodAndIngredientManagementApplication\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAwA8AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T06:44:21.683Z",
+              "EditorCaption": ""
             }
           ]
         }

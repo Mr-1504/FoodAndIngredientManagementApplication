@@ -7,3 +7,15 @@ D:\Code\C#\FoodAndIngredientManagementApplication\obj\Debug\FoodAndIngredientMan
 D:\Code\C#\FoodAndIngredientManagementApplication\obj\Debug\FoodAndIngredientManagementApplication.csproj.CoreCompileInputs.cache
 D:\Code\C#\FoodAndIngredientManagementApplication\obj\Debug\FoodAndIngredientManagementApplication.exe
 D:\Code\C#\FoodAndIngredientManagementApplication\obj\Debug\FoodAndIngredientManagementApplication.pdb
+D:\Code\C#\FoodAndIngredientManagementApplication\bin\Debug\BCrypt.Net-Next.dll
+D:\Code\C#\FoodAndIngredientManagementApplication\bin\Debug\System.Buffers.dll
+D:\Code\C#\FoodAndIngredientManagementApplication\bin\Debug\System.Memory.dll
+D:\Code\C#\FoodAndIngredientManagementApplication\bin\Debug\System.Numerics.Vectors.dll
+D:\Code\C#\FoodAndIngredientManagementApplication\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Code\C#\FoodAndIngredientManagementApplication\bin\Debug\BCrypt.Net-Next.xml
+D:\Code\C#\FoodAndIngredientManagementApplication\bin\Debug\System.Buffers.xml
+D:\Code\C#\FoodAndIngredientManagementApplication\bin\Debug\System.Memory.xml
+D:\Code\C#\FoodAndIngredientManagementApplication\bin\Debug\System.Numerics.Vectors.xml
+D:\Code\C#\FoodAndIngredientManagementApplication\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Code\C#\FoodAndIngredientManagementApplication\obj\Debug\FoodAndIngredientManagementApplication.src.View.Login.frmLogin.resources
+D:\Code\C#\FoodAndIngredientManagementApplication\obj\Debug\FoodAndI.6EEE31CA.Up2Date
