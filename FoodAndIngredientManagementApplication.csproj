@@ -62,8 +62,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="src\Controller\Login\LoginController.cs" />
     <Compile Include="src\Model\DataAccess\SqlHelper.cs" />
-    <Compile Include="src\Model\User.cs" />
+    <Compile Include="src\Model\Login\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="src\View\Login\frmLogin.cs">
@@ -98,10 +99,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="src\Controller\Login\" />
-    <Folder Include="src\Model\Login\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Resource\boder.png" />
     <Content Include="Resource\Boder2.png" />
