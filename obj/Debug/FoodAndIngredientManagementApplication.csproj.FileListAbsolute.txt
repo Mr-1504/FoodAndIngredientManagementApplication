@@ -1,0 +1,9 @@
+D:\Code\C#\FoodAndIngredientManagementApplication\bin\Debug\FoodAndIngredientManagementApplication.exe.config
+D:\Code\C#\FoodAndIngredientManagementApplication\bin\Debug\FoodAndIngredientManagementApplication.exe
+D:\Code\C#\FoodAndIngredientManagementApplication\bin\Debug\FoodAndIngredientManagementApplication.pdb
+D:\Code\C#\FoodAndIngredientManagementApplication\obj\Debug\FoodAndIngredientManagementApplication.csproj.AssemblyReference.cache
+D:\Code\C#\FoodAndIngredientManagementApplication\obj\Debug\FoodAndIngredientManagementApplication.Properties.Resources.resources
+D:\Code\C#\FoodAndIngredientManagementApplication\obj\Debug\FoodAndIngredientManagementApplication.csproj.GenerateResource.cache
+D:\Code\C#\FoodAndIngredientManagementApplication\obj\Debug\FoodAndIngredientManagementApplication.csproj.CoreCompileInputs.cache
+D:\Code\C#\FoodAndIngredientManagementApplication\obj\Debug\FoodAndIngredientManagementApplication.exe
+D:\Code\C#\FoodAndIngredientManagementApplication\obj\Debug\FoodAndIngredientManagementApplication.pdb
