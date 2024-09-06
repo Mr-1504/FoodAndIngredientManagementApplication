@@ -30,13 +30,16 @@ namespace FoodAndIngredientManagementApplication.src.View.Login
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.pnlUser = new System.Windows.Forms.Panel();
             this.pnlLine1 = new System.Windows.Forms.Panel();
             this.picUser = new System.Windows.Forms.PictureBox();
+            this.lblName = new System.Windows.Forms.Label();
             this.picTitle = new System.Windows.Forms.PictureBox();
             this.pnlPass = new System.Windows.Forms.Panel();
+            this.lblPassword = new System.Windows.Forms.Label();
             this.btnSeen = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.picPassword = new System.Windows.Forms.PictureBox();
@@ -44,6 +47,8 @@ namespace FoodAndIngredientManagementApplication.src.View.Login
             this.lblTitle = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
             this.lblSign = new System.Windows.Forms.Label();
+            this.timerNameMove = new System.Windows.Forms.Timer(this.components);
+            this.timerPassMove = new System.Windows.Forms.Timer(this.components);
             this.pnlUser.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTitle)).BeginInit();
@@ -54,6 +59,7 @@ namespace FoodAndIngredientManagementApplication.src.View.Login
             // 
             // txtUsername
             // 
+            this.txtUsername.BackColor = System.Drawing.Color.White;
             this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.Location = new System.Drawing.Point(70, 18);
@@ -62,8 +68,7 @@ namespace FoodAndIngredientManagementApplication.src.View.Login
             this.txtUsername.Size = new System.Drawing.Size(250, 14);
             this.txtUsername.TabIndex = 6;
             this.txtUsername.TabStop = false;
-            this.txtUsername.Text = "Tên người dùng";
-            this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged);
+            this.txtUsername.Leave += new System.EventHandler(this.TxtUsername_Leave);
             // 
             // pnlUser
             // 
@@ -72,6 +77,7 @@ namespace FoodAndIngredientManagementApplication.src.View.Login
             this.pnlUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pnlUser.Controls.Add(this.pnlLine1);
             this.pnlUser.Controls.Add(this.picUser);
+            this.pnlUser.Controls.Add(this.lblName);
             this.pnlUser.Controls.Add(this.txtUsername);
             this.pnlUser.Location = new System.Drawing.Point(62, 189);
             this.pnlUser.Name = "pnlUser";
@@ -96,6 +102,17 @@ namespace FoodAndIngredientManagementApplication.src.View.Login
             this.picUser.TabIndex = 7;
             this.picUser.TabStop = false;
             // 
+            // lblName
+            // 
+            this.lblName.BackColor = System.Drawing.Color.White;
+            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.Location = new System.Drawing.Point(67, 18);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(234, 15);
+            this.lblName.TabIndex = 13;
+            this.lblName.Text = "Tên người dùng";
+            this.lblName.Click += new System.EventHandler(this.lblName_Click);
+            // 
             // picTitle
             // 
             this.picTitle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picTitle.BackgroundImage")));
@@ -108,9 +125,10 @@ namespace FoodAndIngredientManagementApplication.src.View.Login
             // 
             // pnlPass
             // 
-            this.pnlPass.BackColor = System.Drawing.Color.Transparent;
+            this.pnlPass.BackColor = System.Drawing.Color.White;
             this.pnlPass.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlPass.BackgroundImage")));
             this.pnlPass.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pnlPass.Controls.Add(this.lblPassword);
             this.pnlPass.Controls.Add(this.btnSeen);
             this.pnlPass.Controls.Add(this.panel2);
             this.pnlPass.Controls.Add(this.picPassword);
@@ -119,6 +137,17 @@ namespace FoodAndIngredientManagementApplication.src.View.Login
             this.pnlPass.Name = "pnlPass";
             this.pnlPass.Size = new System.Drawing.Size(338, 50);
             this.pnlPass.TabIndex = 9;
+            // 
+            // lblPassword
+            // 
+            this.lblPassword.BackColor = System.Drawing.Color.White;
+            this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPassword.Location = new System.Drawing.Point(67, 18);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(234, 15);
+            this.lblPassword.TabIndex = 14;
+            this.lblPassword.Text = "Mật khẩu";
+            this.lblPassword.Click += new System.EventHandler(this.lblPassword_Click);
             // 
             // btnSeen
             // 
@@ -131,6 +160,7 @@ namespace FoodAndIngredientManagementApplication.src.View.Login
             this.btnSeen.TabIndex = 9;
             this.btnSeen.TabStop = false;
             this.btnSeen.Visible = false;
+            this.btnSeen.Click += new System.EventHandler(this.BtnSeen_Click);
             // 
             // panel2
             // 
@@ -160,7 +190,8 @@ namespace FoodAndIngredientManagementApplication.src.View.Login
             this.txtPassword.Size = new System.Drawing.Size(230, 14);
             this.txtPassword.TabIndex = 6;
             this.txtPassword.TabStop = false;
-            this.txtPassword.Text = "Mật khẩu";
+            this.txtPassword.TextChanged += new System.EventHandler(this.TxtPassword_TextChanged);
+            this.txtPassword.Leave += new System.EventHandler(this.txtPassword_Leave);
             // 
             // lblTitle
             // 
@@ -187,6 +218,7 @@ namespace FoodAndIngredientManagementApplication.src.View.Login
             this.btnLogin.TabIndex = 11;
             this.btnLogin.Text = "Đăng nhập";
             this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // lblSign
             // 
@@ -198,6 +230,16 @@ namespace FoodAndIngredientManagementApplication.src.View.Login
             this.lblSign.Size = new System.Drawing.Size(58, 16);
             this.lblSign.TabIndex = 12;
             this.lblSign.Text = "Đăng ký";
+            // 
+            // timerNameMove
+            // 
+            this.timerNameMove.Interval = 15;
+            this.timerNameMove.Tick += new System.EventHandler(this.timerNameMove_Tick);
+            // 
+            // timerPassMove
+            // 
+            this.timerPassMove.Interval = 15;
+            this.timerPassMove.Tick += new System.EventHandler(this.timerPassMove_Tick);
             // 
             // frmLogin
             // 
@@ -243,5 +285,9 @@ namespace FoodAndIngredientManagementApplication.src.View.Login
         private System.Windows.Forms.Button btnLogin;
         private Label lblSign;
         private PictureBox btnSeen;
+        private Label lblName;
+        private Timer timerNameMove;
+        private Label lblPassword;
+        private Timer timerPassMove;
     }
 }
