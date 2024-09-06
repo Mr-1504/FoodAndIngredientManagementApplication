@@ -46,7 +46,6 @@ namespace FoodAndIngredientManagementApplication.src.View.Login
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.lblTitle = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
-            this.lblSign = new System.Windows.Forms.Label();
             this.timerNameMove = new System.Windows.Forms.Timer(this.components);
             this.timerPassMove = new System.Windows.Forms.Timer(this.components);
             this.pnlUser.SuspendLayout();
@@ -220,17 +219,6 @@ namespace FoodAndIngredientManagementApplication.src.View.Login
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // lblSign
-            // 
-            this.lblSign.AutoSize = true;
-            this.lblSign.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lblSign.ForeColor = System.Drawing.Color.Green;
-            this.lblSign.Location = new System.Drawing.Point(342, 388);
-            this.lblSign.Name = "lblSign";
-            this.lblSign.Size = new System.Drawing.Size(58, 16);
-            this.lblSign.TabIndex = 12;
-            this.lblSign.Text = "Đăng ký";
-            // 
             // timerNameMove
             // 
             this.timerNameMove.Interval = 15;
@@ -247,7 +235,6 @@ namespace FoodAndIngredientManagementApplication.src.View.Login
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(457, 469);
-            this.Controls.Add(this.lblSign);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.pnlPass);
@@ -267,7 +254,6 @@ namespace FoodAndIngredientManagementApplication.src.View.Login
             ((System.ComponentModel.ISupportInitialize)(this.btnSeen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPassword)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -283,7 +269,6 @@ namespace FoodAndIngredientManagementApplication.src.View.Login
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Button btnLogin;
-        private Label lblSign;
         private PictureBox btnSeen;
         private Label lblName;
         private Timer timerNameMove;

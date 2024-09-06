@@ -18,12 +18,9 @@ namespace FoodAndIngredientManagementApplication.src.View.Login
         private bool isNameUp;
         private bool isPasswordUp;
         private bool seen;
-        private bool status;
         //private ListBookForm listBookForm;
         public frmLogin()
         {
-            //listBookForm = new ListBookForm(this);
-            status = false;
             seen = false;
             isNameUp = false;
             isPasswordUp = false;
@@ -48,7 +45,6 @@ namespace FoodAndIngredientManagementApplication.src.View.Login
             txtUsername.Text = "Tên người dùng";
             lblTitle.Text = "Đăng nhập";
             btnLogin.Text = "Đăng nhập";
-            lblSign.Text = "Đăng ký";
         }
         private void setSign()
         {
@@ -58,18 +54,6 @@ namespace FoodAndIngredientManagementApplication.src.View.Login
             txtUsername.Text = "Tên người dùng";
             lblTitle.Text = "Đăng ký";
             btnLogin.Text = "Đăng ký";
-            lblSign.Text = "Đăng nhập";
-            txtPassword.UseSystemPasswordChar = false;
-        }
-        private void lblSign_Click(object sender, EventArgs e)
-        {
-            lblSign.Focus();
-            status = !status;
-            if (status)
-                setSign();
-            else
-                setLogin();
-
             txtPassword.UseSystemPasswordChar = false;
         }
 
@@ -212,6 +196,24 @@ namespace FoodAndIngredientManagementApplication.src.View.Login
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            if (this.txtUsername.Text == "")
+            {
+                //if (this.txtPassword.Text == "" || this.txtPassword.Text == "Mật khẩu" || this.txtPassword.Text == "Nhập đủ thông tin")
+                //{
+                //    this.txtPassword.UseSystemPasswordChar = false;
+                //}
+                //else
+                //    this.txtPassword.UseSystemPasswordChar = true;
+                lblName.Text = "Nhập đủ thông tin";
+                lblName.ForeColor = Color.Red;
+                return;
+            }
+            if (this.txtPassword.Text == "")
+            {
+                lblPassword.Text = "Nhập đủ thông tin";
+                lblPassword.ForeColor = Color.Red;
+                return;
+            }
             Login();
         }
         private void Login()
